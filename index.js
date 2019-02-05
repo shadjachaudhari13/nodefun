@@ -13,7 +13,7 @@ app.post('/', (request, response) => {
     if (!request.body.hasOwnProperty("foo"))
         throw new Error("`foo` expected in body")
 
-    if (request.body.foo == "bar") {
+    if (request.body.foo == "bar1") {
         console.log("`foo-bar` matched. We likes it!")
         response.status(200).send(request.body)
     }
